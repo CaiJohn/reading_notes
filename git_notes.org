@@ -1,0 +1,48 @@
+* Different kinds of version controls
+  - local version control
+  - centralized version control
+  - distributed version control
+* Three main states
+  - committed  --> git directory (repository)
+  - modified --> staging area
+  - staged --> working directory
+* Check settings
+  - git config --list
+  - git help <verb>. ex. git help config
+* Initialize a repository
+  - git init
+  - git clone [url] [target-dir]
+* Recording changes to the repository
+  - The idea of git is to take  snapshot of the whole directory, so we need to track the file first in order to keep track of the change.
+* The local branch at the beginning is 'master'
+* Check status
+  - git status
+  - git status -s
+* Ignoring files
+  - create a file .gitignore listing patterns. How to write ignore file? 
+* Compare the difference
+  - git diff: compare the difference between working area and stage area. How to read diff file?
+    [[http://www.gnu.org/software/diffutils/manual/html_node/Context.html#Context][Context format]] and [[http://www.gnu.org/software/diffutils/manual/html_node/Unified-Format.html#Unified-Format][Unified format]]
+  - 
+
+* Commit
+** Commit information
+   -[master 721fef0] 7&8 added
+   Committer: remijohn <remijohn@remijohn.comp.nus.edu.sg>.
+   master is the branch, 721fef0 is the checksum
+** Commit without add
+   - -a option: git commit -a ...
+* Removing files
+  - git rm #filename# : remove the real file
+  - git rm --cached #filename# : untrack the file
+* View logs
+  - git log
+  - git log -p : shows the difference
+  - git log --stat
+  - git log --pretty=oneline
+  - git log --pretty=format:"%h - %an : %s"
+  - git log --graph
+  - git log --since=2.weeksq
+* Something else
+  - Use >> to append text at the end of a file
+  - C-x C-v: to revert buffer

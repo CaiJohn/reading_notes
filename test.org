@@ -1,0 +1,41 @@
+* Notes on how to use emacs org mode
+** Introduction
+*** Mode for taking notes
+**** title    
+     Some contents here
+** Some basic usage
+*** Headlines
+    Use stars to denotes headlines.
+    One empty line is considered as part of the content. Use two empty lines to
+    denotes empty line.
+*** Outlines
+    Use tabs to fold or show contents 
+*** Motion
+**** Next heading
+     C-c C-n
+**** Next heading in same level
+     C-c C-f
+*** Editing
+**** Add a new head
+     M-RET add where you click; C-RET add where empty
+**** Add a new TODO
+     M-S-RET and C-S-RET, similarly
+***** TODO This is a TODO test
+***** TODO Learn how to use org mode
+*** Tables
+    | Name |    Phone | Age |
+    |------+----------+-----|
+    | Tom  | 12034050 |  19 |
+    |      |          |  20 |
+    |      |          |  30 |
+    |      |          |     |
+    |      |          |     |
+    |      |          |     |
+** Resource for advanced usage
+*** Advanced usage
+    http://home.fnal.gov/~neilsen/notebook/orgExamples/org-examples.html
+*** Official tutorial
+    http://orgmode.org/org.html#Introduction
+
+
+

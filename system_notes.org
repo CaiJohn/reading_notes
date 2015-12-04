@@ -1,0 +1,4 @@
+* Where the specifications are collected?
+** --pip still hasn't put the existential for pre-conditions
+** ? What is EBase? EAssume?
+** check_exp will check the every expression. But it is really hard to debug.

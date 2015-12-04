@@ -1,0 +1,91 @@
+* Important notes
+** Document structure
+*** View the org document
+    Org is based on *Outline* mode. The headlines start with one or more stars.
+    
+    Use <TAB> to cycle around a tree.
+    
+    Use C-u <TAB> to globally cycle
+*** Move among items
+    C-c C-n: move to the next heading (globally move)
+
+    C-c C-f: move to the next heading in same level (locally move). And it is useful to go to the head of the closest tree.
+
+    C-c C-u: move backward to higher level heading
+*** Structure editing
+**** Add new items
+     C-<RET>, M-<RET>: Add headings
+
+     C-S-<RET>,M-S-<RET>: Add TODO items
+**** Mark
+     M-h: mark the current element
+
+     C-c @: mark the subtree. ?? But what is a exactly?
+**** Cut, copy and paste
+     (start with C-c C-x)
+
+     C-c C-x C-w, cut the subtree
+
+     C-c C-x M-w, copy the subtree
+
+     C-c C-x C-y, paste the subtree
+**** Move trees
+     M-up, move the tree up. But I want to use other keys
+**** Sparse trees
+     Only show the trees that contain some information
+     C-c /
+     M-g n move around these trees
+*** Plain lists
+**** To construct a plain list with more information
+    1. There are three kinds of bullet, - + *
+    2. Numbers as order list
+    3. Description list
+       - First :: This is the first item
+       - Second :: This is the second item
+**** To create new items
+1. M-<RET> create a new plain list item
+2. M-S-<RET> create a new checkbox list item, only under plaintext
+   1.[X] This is a checkbox list item
+   2.[ ] This is another checkbox list item
+**** 
+*** Draws
+To be filled...
+
+
+*** Tables
+To be filled up
+*** Hyperlinks
+1. [[www.google.com][google]]: An example of URL link, can also insert file path [[file:./home/remijohn/Documents/]]
+2. <<a target>>: An example of a target
+   *b* 
+3. [[a target][target]]: An example of link to the target.
+    
+
+
+*** 
+    
+    
+
+** TODO Use Todo
+*** Basic use
+1. start
+   Just start a headline with TODO. 
+   
+2. (org-todo)
+   C-c C-t: Rotate the TODO state of the subtree
+
+3. M-S-<RET>
+   Create a new TODO item
+ 
+   
+** Others
+
+   
+* Resources
+** Org mode homepage
+   http://orgmode.org/
+** Official tutorial
+   http://orgmode.org/org.html
+   
+
+

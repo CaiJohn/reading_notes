@@ -1,0 +1,28 @@
+* Outlines
+
+* Notes
+
+
+* Questions
+** What is logic?
+   Concerned with the use and study of valid reasoning
+   logic has three main parts: inductive reasoning, deductive reasoning and abductive reasoning
+   The word logic can be used to described a field.
+   But when we say propositional logic is a formal system.
+** Inductive, deductive and abductive
+
+** Formal language
+   A language that is constrained by rules
+** Well-formed formula (wff)
+   A formula that is part of the formal language
+** Formal system
+   - Elements by Euclid
+   - A finite set of symbols, a grammar, a set of axioms, a set of inference
+** What is Hoare logic?
+   - It is a formal system.
+** What is separation logic?
+   - An extension of Hoare logic. Easier to reason about shared mutable data strutures.
+** Why separation logic is useful?
+   - Example: reverse the linked list
+   - separation logic operation already prohibit sharing
+   - local reasoning

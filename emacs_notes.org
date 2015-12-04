@@ -1,0 +1,75 @@
+* Some basic navigation
+** navigate between sentences
+   M-a, M-e navigate between sentences
+** Use prefix to avoid repeatedly key input
+   C-u 3 C-p, by default is 4
+   M-digit also can play the same trick
+** Go To line
+   M-g g
+** Mark
+   C-esc to set mark in current position
+   When jump to either end of the buffer, mark is set in the previous location
+   Exit incremental search
+   Yank text
+   Insert a buffer or file
+   C-esc is conflicting with the system key...
+** Region
+*** Select all
+    C-x h
+*** Make region contain the current paragraph
+    M-h
+** Killing and Yanking
+   kill to the end of the sentence M-k
+   kill the next word M-d
+** Search
+   After search, type RET to stay or C-g to return to the start of searching
+   C-s C-s: go to the last search
+   C-s M-p/n: go the search history
+   ?? Don't know what are they...
+   Type M-s c to toggle search case-sensitivity.
+   Type M-s i to toggle search in invisible text.
+   Type M-s r to toggle regular-expression mode.
+   Type M-s w to toggle word mode.
+   Type M-s _ to toggle symbol mode.
+** replacement
+   M-%
+** Regular expression search
+   Not yet
+** Record keyboard Macros
+   Not yet
+** Help
+   C-h k: shows documentation for the command associated with any particular key
+   C-h f: shows documentation for command by name
+   C-h a: generally matching
+** common tools
+   M-x shell
+   M-x compile
+   M-x grep
+** Major modes
+   M-x name-mode
+
+* To customize your own emacs
+** Emacs配置文件——新手攻略
+   https://www.zybuluo.com/qqiseeu/note/17692
+** features mechanism
+*** provide and require
+    Loading files automatically.
+    A feature name is a symbol standing for a collection of functions,
+    variables.
+    (require feature-name) will load the file that provides the
+    feature if it is not loaded.
+    (provide feature-name) will register the file to the feature list.
+*** To see value
+    C-h v value-name
+
+(load-file "emacs_notes.org")
+
+(add-to-list 'load-path "/home/remijohn/Documents")
+(load-file "test")
+(require 'test)
+(expand-file-name "lisp" user-emacs-directory)
+user-emacs-directory
+features
+(haha)
+hahavar
+

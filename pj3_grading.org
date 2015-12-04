@@ -1,0 +1,68 @@
+* Team Masters
+** Grade: 100+30
+** Members
+   - Phung Ngoc Thanh Phuong 100+30
+   - MUHAMMAD KHAIRUL SYAMIL BIN HASHIM 100+30
+** Evaluation
+   - Good testing, fully working
+   - Coloring strategies for register allocation, and optimization
+   - Finish the bonus part, good
+* Team CSD
+** Grade: 60
+** Members
+   - Chen Wei Ming 60
+   - Saw Han Qiang, Matthew 50
+   - Lee Yong Meng 70
+** Evaluation
+   - Basically working
+   - Naive register allocation
+   - Report can cover the correct solution of dynamic dispatching
+* Team Ben
+** Grade: 90
+** Members
+   - Benedict 90
+** Evaluation
+   - Good testing
+   - Fully working
+   - Simple register allocation
+* Team Moang
+** Grade: 80
+** Members
+   - Juan Manuel Munoz Perez 80
+   - Michael Filip Noven 70
+   - Mathew 60
+** Evaluation
+   - Fully working, good testing
+   - Simple strategies for register allocation
+   - Not fully answer the question for report
+* Team Happy
+** Grade: 80
+** Members
+   - Cao Li 80
+   - Trudy Pek-Siew Wong 80
+   - Xiao Jinyu 80
+** Evaluation
+   - Coloring strategies for register allocation
+   - good answer to report
+   - some minor problems in testing
+* Team getReg()
+** Grade: 100
+** Members
+   - Koh Wai Kit 100
+   - Sean Ho Kai Jie 100
+   - Wu Di 100
+   - Naomi Leow Wen Xin 100
+** Evaluation
+   - Very good implementaion and testing
+   - good answers to report
+   - good strategies for registers
+     
+* Team Machine5
+** Grade 90
+** Members
+   - Wang Peikai 80
+   - Zhu Wu 90
+** Evaluation
+   - Good testing
+   - Coloring strategies for registers
+   - Optimization 
