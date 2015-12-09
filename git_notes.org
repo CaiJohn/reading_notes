@@ -12,6 +12,7 @@
 * Initialize a repository
   - git init
   - git clone [url] [target-dir]
+* clone
 * Recording changes to the repository
   - The idea of git is to take  snapshot of the whole directory, so we need to track the file first in order to keep track of the change.
 * The local branch at the beginning is 'master'
@@ -43,6 +44,15 @@
   - git log --pretty=format:"%h - %an : %s"
   - git log --graph
   - git log --since=2.weeksq
+* Remote operation
+  One project can has several 'remote' places that are working on it. So the remote will actually contain all the information.
+  - git remote : show all the remote versions of this branch
+  - git remote add <name> <url> : add the url to the name as the remote version of this branch
+  - git push <remote-name> <branch-name> : push the branch to the remote. For now I still don't quite understand how it is going on?
 * Something else
   - Use >> to append text at the end of a file
   - C-x C-v: to revert buffer
+
+
+* Questions:
+1. when git push, how is the relation between branches? The remote is actually about all the branches? Answers may come from the branch and server part.

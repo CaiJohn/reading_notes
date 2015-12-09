@@ -1,0 +1,8 @@
+* URL
+  - Uniform Resource Locator. Informally what we call "web address".
+  - syntax: 
+#+BEGIN_EXAMPLE
+  The syntax of URL, to be implemented.
+#+END_EXAMPLE
+** Resources
+   - [[https://en.wikipedia.org/wiki/Uniform_Resource_Locator][URL wiki]]

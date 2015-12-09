@@ -1,0 +1,11 @@
+* What is formal method
+  A fault avoidance technique, modeling system as mathematical entities.
+
+
+* Reading materials
+1. http://users.ece.cmu.edu/~koopman/des_s99/formal_methods/
+   This seems to be some material of a reading group about dependable system
+   design. This paper talks about some basic concept of formal method. There are
+   some links in this paper may be interesting to look into.
+2. [[http://formalmethods.wikia.com/wiki/VL][Formal Method Wiki]]
+   

@@ -1,0 +1,21 @@
+* Review on formal method
+** Formal Methods: State of the Art and Future Directions
+*** [[./Clarke_1996_FMS.pdf][pdf]]
+*** bibtex
+    @article{Clarke_1996_FMS,
+    author = {Clarke, Edmund M. and Wing, Jeannette M.},
+    title = {Formal Methods: State of the Art and Future Directions},
+    journal = {ACM Comput. Surv.},
+    issue_date = {Dec. 1996},
+    volume = {28},
+    number = {4},
+    month = dec,
+    year = {1996},
+    issn = {0360-0300},
+    pages = {626--643},
+    numpages = {18},
+    url = {http://doi.acm.org/10.1145/242223.242257},
+    doi = {10.1145/242223.242257},
+    acmid = {242257},
+    publisher = {ACM},
+    address = {New York, NY, USA},} 

@@ -1,0 +1,121 @@
+* quick sort
+** General idea
+   - Input: an valid array, with 0=<l<=r
+   - The general princle is to divide and conquer.
+   - 
+** Problem:
+   - It is possible that the partition will give an empty array and a full array, in which case that the size of the full array one will never reduce and the program will go on and on
+   - One solution for this will be always take out the pivot element, which means
+     A[l,r], the partition gives p, so the recursive call always go on A[l,p-1] and A[p+1,r].
+     So in the partion algorithm, we need to put the pivot back to the returned position.
+   - *The partition algorithm does not guarentee the reduction of the problem.* Since the goal is to reduce the size of the array, so it should be part of the reduction strategies.
+** Solution
+   - The description of the algorithm should like this
+     1. Divide the input array into three parts, A[l,p-1], A[p], A[p+1,r];
+     2. Recursively sort A[l,p-1], A[p+1,r]
+	
+	In this case, we need to put the pivot into the correct position after the partition.
+#+BEGIN_SRC C
+void quick_sort(int arr[], int start, int end){
+  if(start>=end){
+    return;
+  }
+  else{
+    if(start<end){
+      int tmp = arr[end];
+      
+      printf("before partition\n");
+      for(int i=0;i<10;i++){
+	printf("%d ",arr[i]);
+      }
+      printf("\n");
+
+      int pos = partition(arr,start,end-1,tmp);
+      arr[end] = arr[pos];
+      arr[pos] = tmp;
+      printf("after partition\n");
+      for(int i=0;i<10;i++){
+	printf("%d ",arr[i]);
+      }
+      printf("\n");
+
+      printf("recursive call: start %d pos %d end %d\n", start,pos,end);
+      quick_sort(arr,start,pos-1);
+      quick_sort(arr,pos+1,end);
+      return;
+    }
+    else{
+      printf("Invalid array, start:%d, end:%d\n",start,end);
+      exit(-1);
+    }
+  }
+}
+#+END_SRC
+   - Alternatively, it can be described like:
+     1. Divide the input array into two parts.A[l,p-1], A[p,r]
+     2. if neither of the sub-arrays are empty, recursively handle both of them
+     3. if one of them is full, swap the pivot to the correct position
+	
+        In this case, the partition procedure merely do the partition work, instead of putting the pivot in the correct position.
+#+BEGIN_SRC C
+int partition(int arr[], int start, int end, int pivot){
+  if(start==end){
+    return start;// Just return
+  }
+  else{
+    if(start<end){
+      if(arr[start]<pivot){
+	return partition(arr,start+1,end,pivot);
+      }
+      else{
+	if(arr[end]>=pivot){
+	  return partition(arr,start,end-1,pivot);
+	}
+	else{
+	  int tmp = arr[end];
+	  arr[end] = arr[start];
+	  arr[start] = tmp;
+	  return partition(arr,start+1,end,pivot);
+	}
+      }
+    }
+    else{
+      printf("Invalid range of array\n");
+      exit(-1);
+    }
+  }
+}
+#+END_SRC
+       And the quick sort itself needs to handle the cases when one of the sub-arrays are empty
+#+BEGIN_SRC C
+void quick_sort(int arr[], int start, int end){
+  if(start==end){//empty array
+    return;
+  }
+  else{
+    if(start<end){
+      int pos = partition(arr,start,end,arr[start]);
+      if(pos==end){
+	quick_sort(arr,start,pos-1);
+      }
+      else{
+	quick_sort(arr,start,pos);
+      }
+      if(pos==start){
+	quick_sort(arr,pos+1,end);
+      }
+      else{
+	quick_sort(arr,pos,end);
+      }
+      return;
+    }
+    else{
+      printf("Invalid array, start:%d, end:%d\n",start,end);
+      exit(-1);
+    }
+  }
+}
+#+END_SRC
+
+** Something else
+   [[https://en.wikipedia.org/wiki/Dutch_national_flag_problem][Dutch national flag problem]]

@@ -47,10 +47,8 @@
 2. M-S-<RET> create a new checkbox list item, only under plaintext
    1.[X] This is a checkbox list item
    2.[ ] This is another checkbox list item
-**** 
 *** Draws
 To be filled...
-
 
 *** Tables
 To be filled up
@@ -59,10 +57,22 @@ To be filled up
 2. <<a target>>: An example of a target
    *b* 
 3. [[a target][target]]: An example of link to the target.
-    
 
+*** Insert literals
+    - Used when exporting to org mode documents
+#+BEGIN_EXAMPLE
+      This is some code
+#+END_EXAMPLE
+*** Working with source code
+    - Use C-c ' to edit the current code block with highlight
+#+BEGIN_SRC C
+  void main(){
+    printf("Hello World!\n");
+    return;
+  }
 
-*** 
+  // This is really awesome...
+#+END_SRC
     
     
 
